@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Home</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,24 +41,67 @@
             <li> <a href="#">empresa</a> </li>
             <li> <a href="#">clientes</a> </li>
             <li> <a href="#">produtos</a> </li>
-
-            <li class="dropdown"> 
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Minha Conta <span class="caret"></span>
-              </a> 
-              <ul class="dropdown-menu">
-                <li> <a href="#">Editar</a> </li>
-                <li> <a href="#">Logout</a> </li>
-              </ul>
-            </li>
+           
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                     Acesso <span class="caret"></span> </a> 
+           		   <ul class="dropdown-menu">
+                <li> <a href="http://localhost:8080/ModeloPadraoWeb/TelaCadastro.html">Cadastro</a> </li>
+               
+                <li> 
+                   	<a href="#" data-toggle="modal" data-target=#login>Login</a>
+			   	</li>
+			   	</ul>
+			        <!-- Janela -->
+				         <form class="modal fade" id="login">
+				          <div class="modal-dialog modal-sm">
+            				<div class="modal-content">
+				          				              
+				              <!-- cabecalho -->
+				              <div class="modal-header">
+				                <button type="button" class="close" data-dismiss="modal">
+				                  <span>&times;</span>
+				                </button>
+				                <h4 class="modal-title">Efetuar login</h4>
+				              </div>
+				
+				              <!-- Corpo -->
+				              <div class="modal-body">
+				              
+				                <form action="logar">
+				                  <div class="form-group">
+				                    <label for="email">Email</label>
+				                      <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu E-mail">              
+				                  </div>
+				                  <div class="form-group">
+				                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">              
+				                  </div>
+				                </form>
+				              </div>
+	
+				
+				              <!-- rodape -->
+				              <div class="modal-footer">
+				                <button type="button" class="btn btn-default" data-dismiss="modal">
+				                  Close
+				                </button>
+						
+				                <button type="submit" class="btn btn-primary">
+				                  Logar
+				                </button>
+				              </div>              
+				            </div>    
+				          </div>
+				       </form>
+	               </li>
           </ul>
         </div>
       </div>
     </nav>
 
 
+	<!-- Conteúdo da pagina  -->
 
-    <div class="container">
+     <div class="container">
 		<div class="row">
             <div class="col-xs-6  marcador">
         		<h1 align="center">Conteúdo do site1</h1>
@@ -68,20 +111,24 @@
             </div>
         </div> <!-- Fim row 1 -->
         
- 	<div class="row">
-       	<div class="col-xs-6  marcador">
-              <h1 align="center">Conteúdo do site1</h1>
-            </div>
-            <div class="col-xs-6  marcador">
-              <h1 align="center">Conteúdo do site1</h1>
-            </div> <!-- Fim row 2 -->
+	 	<div class="row">
+	       	<div class="col-xs-6  marcador">
+	              <h1 align="center">Conteúdo do site1</h1>
+	            </div>
+	            <div class="col-xs-6  marcador">
+	              <h1 align="center">Conteúdo do site1</h1>
+	            </div> <!-- Fim row 2 -->
+	     </div>
      </div>
-      </div>
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+
+
+
+
